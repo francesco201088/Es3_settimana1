@@ -1,0 +1,95 @@
+body{
+    font-family: Arial, sans-serif;
+}
+
+.container{
+  width: 236px;
+  height: 354px;
+}
+.container img{
+  border-radius: 20px;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: aliceblue;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  right: -150px;
+  margin-right: 5px;
+  transform: translateY(0px);
+  transition: 0.35s;
+  opacity: 0;
+  cursor: pointer;
+  
+}
+#dot{    
+  line-height: 30px;
+}
+
+#up{            
+  line-height: 27px;
+}
+
+.elliptical {
+  background-color: aliceblue;
+  text-align: center;
+  width: 135px;
+  height: 30px;
+  border-radius: 60px;
+  line-height: 30px;
+  position: relative;
+  left: 5px;
+  transform: translateY(-30px);
+  transition: 0.35s;
+  cursor: pointer;
+  opacity: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.elliptical i{
+  margin-left:5px
+}
+
+.save {
+  background-color: red;
+  color: white;
+  text-align: center;
+  width: 90px;
+  height: 45px;
+  border-radius: 60px;
+  line-height: 41px;
+  position: absolute;
+  left: 150px;
+  font-size: 1.2rem;
+  transform: translateY(-50px);
+  transition: 0.35s;
+  cursor: pointer;
+  opacity: 0;
+  z-index: 3;
+}
+
+.container:hover .save{
+transform: translateY(10px);
+opacity: 1;
+
+}
+.container:hover .circle {
+transform: translateY(-40px);
+opacity: 1;
+
+}
+.container:hover .elliptical {
+transform: translateY(-70px); 
+opacity: 1;
+
+}
+.container:hover .img {
+filter:  brightness(0.7);
+
+}
